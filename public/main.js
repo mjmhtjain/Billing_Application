@@ -106,7 +106,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 var appRoutes = [
-    { path: '/', component: _bill_history_bill_history_component__WEBPACK_IMPORTED_MODULE_3__["BillHistoryComponent"] }
+    { path: '', component: _bill_history_bill_history_component__WEBPACK_IMPORTED_MODULE_3__["BillHistoryComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -117,7 +117,8 @@ var AppRoutingModule = /** @class */ (function () {
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes, { enableTracing: false })
             ],
-            declarations: []
+            declarations: [],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
         })
     ], AppRoutingModule);
     return AppRoutingModule;
@@ -195,7 +196,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  bill-history works!\n</p>\n"
+module.exports = "<div class=\"row\">\n  <div class=\"col-sm-4\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <table class=\"table\">\n          <thead>\n            <tr>\n              <th scope=\"col\">Item</th>\n              <th scope=\"col\">Quantity</th>\n              <th scope=\"col\">Price</th>\n              <th scope=\"col\">Total</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <th scope=\"row\">Item 1</th>\n              <td>X 1</td>\n              <td>12</td>\n              <td>12</td>\n            </tr>\n            <tr>\n              <th scope=\"row\">Item 2</th>\n              <td>X 1</td>\n              <td>12</td>\n              <td>12</td>\n            </tr>\n            <tr>\n              <th scope=\"row\">Item 3</th>\n              <td>X 1</td>\n              <td>12</td>\n              <td>12</td>\n            </tr>\n          </tbody>\n        </table>\n\n        <!-- <ul class=\"list-group list-group-flush\">\n          <li class=\"list-group-item\">Cras justo odio</li>\n          <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n          <li class=\"list-group-item\">Morbi leo risus</li>\n          <li class=\"list-group-item\">Porta ac consectetur ac</li>\n          <li class=\"list-group-item\">Vestibulum at eros</li>\n        </ul> -->\n\n        <!-- <div class=\"row\">\n          <div class=\"col-sm-8\" style=\"text-align: left\">\n            <p>Total :</p>\n          </div>\n\n          <div class=\"col-sm-4\" style=\"text-align: right\">\n            <p>12312</p>\n          </div>\n        </div> -->\n\n        <table class=\"table table-borderless\">\n          <tbody>\n            <tr>\n              <td style=\"width: 25%\">Total : </td>\n              <td style=\"text-align: left\">12</td>\n            </tr>\n            <tr>\n              <td style=\"width: 25%\">CGST : </td>\n              <td style=\"text-align: left\">14%</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        This is some text within a card body.\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 

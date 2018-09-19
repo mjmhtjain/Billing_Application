@@ -14,7 +14,7 @@ var sampleResponse = {
 
 // Connect mongoose to our database
 const config = require('./database');
-mongoose.connect(config.database, {useNewUrlParser : true});
+mongoose.connect(config.database, { useNewUrlParser: true });
 
 //Initialize our app variable
 const app = express();
@@ -33,5 +33,9 @@ const port = 3000;
 app.listen(port, () => {
     console.log('Starting server at ' + port);
 });
+
+app.get('/', (req, res) => {
+    res.send('Hello There!!');
+})
 
 app.use('/bill_hist', billHistoryController);

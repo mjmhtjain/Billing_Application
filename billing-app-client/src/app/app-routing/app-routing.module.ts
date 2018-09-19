@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BillHistoryComponent } from '../bill-history/bill-history.component';
 
 const appRoutes : Routes = [
-  {path : '/', component : BillHistoryComponent}
+  {path : '', component : BillHistoryComponent}
 ];
 
 @NgModule({
@@ -14,6 +14,7 @@ const appRoutes : Routes = [
       appRoutes,
       { enableTracing: false })
   ],
-  declarations: []
+  declarations: [],
+  exports : [RouterModule]
 })
 export class AppRoutingModule { }
